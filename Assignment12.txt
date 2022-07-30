@@ -1,0 +1,193 @@
+                                                               Assignment - 12 A Job Ready Bootcamp in C++, DSA and IOT MySirG
+
+                                                                                    Recursion in C Language
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Write a recursive function to print first N natural numbers.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		print(n-1);
+		cout<<" "<<n;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+2. Write a recursive function to print first N natural numbers in reverse order.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		cout<<" "<<n;
+		print(n-1);
+
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+3. Write a recursive function to print first N odd natural numbers.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		print(n-1);
+		cout<<" "<<n*2-1;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+4. Write a recursive function to print first N odd natural numbers in reverse order.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		cout<<" "<<n*2-1;
+		print(n-1);
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+5. Write a recursive function to print first N even natural numbers.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		print(n-1);
+		cout<<" "<<n*2;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+6. Write a recursive function to print first N even natural numbers in reverse order.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		cout<<" "<<n*2;
+		print(n-1);
+		
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+7. Write a recursive function to print squares of first N natural numbers.
+
+Ans.#include<iostream>
+using namespace std;
+void print(int n) {
+	if(n>0) {
+		print(n-1);
+		cout<<" "<<n*n;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	print(n);
+	return 0;
+}
+
+
+8. Write a recursive function to print binary of a given decimal number.
+
+Ans.#include<iostream>
+using namespace std;
+void binary(int n) {
+	if(n==0|| n==1) {
+		cout<<n;
+	} else {
+		binary(n/2);
+		cout<<n%2;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	binary(n);
+	return 0;
+}
+
+
+9. Write a recursive function to print octal of a given decimal number.
+
+Ans.#include<iostream>
+using namespace std;
+void binary(int n) {
+	if(n<8) {
+		cout<<n;
+	} else {
+		binary(n/8);
+		cout<<n%8;
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	binary(n);
+	return 0;
+}
+
+
+10. Write a recursive function to print reverse of a given number.
+
+Ans.#include<iostream>
+using namespace std;
+void reverse(int n) {
+	if(n/10==0) {
+		cout<<n;
+	} else {
+		cout<<n%10;
+		reverse(n/10);
+
+	}
+}
+int main() {
+	int n;
+	cin>>n;
+	reverse(n);
+	return 0;
+}
